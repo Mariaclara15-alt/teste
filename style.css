@@ -1,4 +1,40 @@
-/*Cascata*/
 h1 {
-    color: brown;
+    color: rgb(35, 181, 207);
+}
+
+h2 {
+    color:rgb(0, 26, 255)
+}
+
+h3 {
+    color:antiquewhite
+}
+
+.primeiro{
+    border: 2px solid lightseagreen;
+    margin-bottom: 30px;
+    padding: 20px 20px 20px 20px;
+    width: 100px;
+ }
+
+ .segundas{
+    color: 2px solid rgb(43, 161, 201);
+ }
+
+
+body{
+    padding: 4px;
+    background-color: rgb(187, 212, 235);
+}
+
+
+li{
+    color: black;
+}
+
+*{
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

@@ -1,12 +1,192 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cascata, Especifidade e Combinadores</title>
     <link rel="stylesheet" href="style.css">
+    <title>Informações</title>
 </head>
 <body>
-    <h1>Cascata, Especifidade e Combinadores</h1>
+    <header>
+        <h1 id="Titulo">Sobre o CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="#cascata">Todas as regras da cascata</a></li>
+                <li><a href="#especificidade">Suas especidicidades</a></li>
+                <li><a href="#combinadores">Combinadores</a></li>
+                <li><a href="#pseudo-classe">Pseudo-classe</a></li>
+                <li><a href="#inline-block">Inline-block</a></li>
+                <li><a href="#Display">Display</a></li>
+                <li><a href="#margins,padding e border">Margins, padding e border</a></li>
+            </ul>
+        </nav>
+    </header>
+<hr>
+    <main>
+        <section>
+            <h2 id="cascata">Todas as regras da cascata</h2>
+            <div>
+                <p>
+                    Regras da Cascata: algoritmo que resolve conflitos quando múltiplas regras de estilo se aplicam ao mesmo elemento HTML, determinando qual delas tem prioridade para definir a aparência final.
+                </p>
+                <p>A cascata vai determinar que tudo que seja escrito vai ser lido de cima para baixo</p>
+                <p>E se houver problemas de conflitos de propriedade e selecinar h1, a última a ser selecionado vai prevalecer.</p>
+                <p>A cascata ajuda a resolver certos conflitos dentro do CSS entre eles estão:</p>
+                <ol>
+                    <li>Origem de estilo</li>
+                    <li>Especificidade</li>
+                    <li>Uma ordem de declaração</li>
+                </ol>
+                <a href="#Titulo">volte ao inicio</a>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2 id="Especificidade">Especificidade no CSS</h2>
+            <div>
+                <p>é um algoritmo que determina qual regra de estilo será aplicada a um elemento quando há conflitos entre várias declarações de estilo.</p>
+                <p>É quando o seletor é mais específico, ele tem mais peso de vencer de um seletor menos específico.</p>
+                <hr>
+                <ul>
+                   <li><strong>Tipos de Seletores</strong></li>
+                </ul>
+                <ol type="1">
+                    <li>Seletor de elementos</li>
+                    <li>Seletor de classe</li>
+                    <li>Seletor de ID</li>
+                    <li>Seletor de pseudo-classe</li>
+                    <li>Estilo inline</li>
+                </ol>
+                <ol type="1">
+                    <li>Quantidade de pontos:</li>
+                    <li>0,0,1</li>
+                    <li>0,1,0</li>
+                    <li>1,0,0</li>
+                    <li>1,0,0,0</li>
+                </ol>
+                <a href="#Titulo">volte ao inicio</a>
+                </div>
+        </section>
+        <hr>
+        <section>
+            <h2 id="Combinadores">Combinadores</h2>
+            <div>
+                <p>Combinador é quando eu coloco um seletor junto com outro seletor, ou seja qualquer h1 que estiver na div primeira vai ser selecionado.</p>
+                <ul>
+                    <li>Evita repetir classes nos IDs</li>
+                    <li>Deixa mais simplificado a organização do CSS</li>
+                    <li>Deixa o CSS com um aspecto mais organizado e nada muito poluído</li>
+                    <li>Permite aplicar diversas coisas</li>
+                </ul>
+                <a href="#Titulo">volte ao inicio</a>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2 id="pseudo-classe">Pseudo-classe</h2>
+            <div>
+                <p>São como "estilos fantasmas" que se aplicam a um elemento quando uma determinada condição é cumprida, mesmo que essa condição não esteja no código HTML. </p>
+
+                <h2>Lista de pseudo-classes:</h2>
+                <h2><First-child></First-child></h2>
+                <p>Seleciona apenas o primeiro h1, o primeiro filho de um elemento.</p>
+                <h2><Last-child></Last-child></h2>
+                <p>Seleciona apenas o últimoh1, o último filho do elemento.</p>
+                <h2><Nth-child></Nth-child></h2>
+                <p>É o numero  do filho, e será colocado entre () e o numero do h1.</p>
+                <h2><Nth-of-type></Nth-of-type></h2>
+                <p>Ele tem o mesmo efeito ue o nth-child.</p>
+                <a href="#Titulo">volte ao inicio</a>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2 id="inline-block"><Inline-block></h2>
+            <div>
+                <p>É um display que combina diversas características de elementos inline e block</p>
+
+                <h2>Podemos utilizar para:</h2>
+                <ul>
+                    <li>Para criar sites horizontais</li>
+                    <li>Usar para alinhamentos de caixas de conteúdo</li>
+                    <li>Para ajustar links e botões</li>
+                </ul>
+            </div>
+            <a href="#Titulo">volta ao inicio</a>
+        </section>
+        <hr>
+
+        <section>
+            <h2 id="display">display</h2>
+            <div>
+                <ol>
+                    <li><strong>Elementos que tem Display Block:</strong></li>
+                </ol>
+                <ol>
+                    <li>h1</li>
+                    <li>p</li>
+                    <li>div</li>
+                    <li>nav</li>
+                    <li>section</li>
+                    <li>main</li>
+                    <li>header</li>             
+                </ol>
+
+                <ul>
+                    <li><strong>As Prioridades desse elemento:</strong></li>
+                    <li>Width</li>
+                    <li>padding</li>
+                    <li>margin</li>
+                    <li>border</li>
+                    <li>hright</li>
+                </ul>
+
+                <ol>
+                    <li><strong>Elementos que ocupam tela inteira:</strong></li>
+                </ol>
+
+                <ol>
+                    <li>a</li>
+                    <li>strong</li>
+                    <li>span</li>
+                </ol>
+
+                <ul>
+                    <li><strong>As prioridades deste elemento:</strong></li>
+                    <li>padding</li>
+                    <li>margin</li>
+                    <li>border</li>
+                </ul>
+
+                <ol>
+                    <li><strong>Elementos que NÃO ocupa a tela inteira:</strong></li>
+                </ol>
+
+                <ol>
+                    <li>img</li>
+                </ol>
+
+                <ul>
+                    <li>Propriedades que usamos nesse tipo de elemento:</li>
+                    <li>Utilizamos tanto o Display block como o Display inline.</li>
+                </ul>
+            </div>
+            <a href="#Titulo">volta ao inicio</a>
+        </section>
+        <hr>
+        </section>
+        <h2 id="margins,padding e border">margins,padding e border</h2>
+        <div>
+            <ul>
+                <li>Margin: É o espaço externo do elemento</li>
+                <li>Padding: É o espaço interno do elemento</li>
+                <li>Border: É o contorno do elemento</li>
+            </ul>
+           <a href="#Titulo">volte ao inicio</a>
+        </div>
+        
+    </main>
+    
+   
 </body>
 </html>
